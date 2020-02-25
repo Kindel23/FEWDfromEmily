@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: sans-serif;
+        }
+        header, nav, article, footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+        }
+        #wrapper {
+            height: 100%;
+            display: grid;
+            grid-gap: 3px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 40px auto 40px;
+            grid-template-areas: 
+                "h h h h h h h h h h h h"
+                ". m m c c c c c c c c ."
+                "f f f f f f f f f f f f"
+        }
+        header {
+            background-color: #008ab1;
+            grid-area: h;
+        }
+        nav {
+            background-color: #006699;
+            grid-area: m;
+        }
+        article {
+            background-color: #1ccc9e;
+            grid-area: c;
+        }
+        footer {
+            background-color: #00adb1;
+            grid-area: f;
+        }
+        
+      
+    </style>
+</head>
+<body>
+<!--section#wrapper>header{Header}+nav{Menu}+article{Content}+footer{Footer}-->
+ <section id="wrapper">
+     <header>Header</header>
+     <nav>Menu</nav>
+     <article>Content</article>
+     <footer>Footer</footer>
+ </section>
+</body>
+</html>

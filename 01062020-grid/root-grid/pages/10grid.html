@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: sans-serif;
+        }
+        header, nav, article, footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+        }
+        #wrapper {
+            height: 100%;
+            display: grid;
+            grid-gap: 3px;
+/*            grid-template-columns: 1fr 5fr;*/
+            grid-template-columns: [main-start] 1fr [content-start] 5fr [content-end main-end];
+            grid-template-rows: [main-start] 40px [content-start] auto [content-end] 40px [main-end];
+        }
+        header {
+            background-color: #008ab1;
+            grid-column: main-start / main-end;
+             grid-column: main;
+        }
+        nav {
+            background-color: #006699;
+        }
+        article {
+            background-color: #1ccc9e;
+            grid-column: content-start / content-end;
+        }
+        footer {
+            background-color: #00adb1;
+            grid-column: main;
+        }
+   
+    </style>
+</head>
+<body>
+<!--section#wrapper>header{Header}+nav{Menu}+article{Content}+footer{Footer}-->
+ <section id="wrapper">
+     <header>Header</header>
+     <nav>Menu</nav>
+     <article>Content</article>
+     <footer>Footer</footer>
+ </section>
+</body>
+</html>

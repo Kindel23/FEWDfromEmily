@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: sans-serif;
+        }
+        header, nav, article, footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+        }
+        #wrapper {
+            height: 100%;
+            display: grid;
+            grid-gap: 3px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 1fr;
+            grid-template-areas: 
+                "h h"
+                "s s"
+                "a a"
+                "a a"
+                "d g"
+                "e i"
+                "y y"
+                "z z"
+                "f f";
+        }
+/*
+        #wrapper {
+                height: 100%;
+                display: grid;
+                grid-gap: 3px;
+            
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: 40px auto 50% 40px;
+                grid-template-areas: 
+                    "h h h h h h h h h h h s"
+                    "d d d e e e i i i g g g"
+                    "a a a a a a a a y y y y"
+                    "a a a a a a a a z z z z"
+                    "f f f f f f f f f f f f"
+            }
+*/
+        header { /* element selector */
+            background-color: #008ab1;
+            grid-area: h;
+        }
+        #search {
+            background-color: #006699;
+            grid-area: s;
+        }
+        article {
+            background-color: #1ccc9e;
+            grid-area: a;
+        }
+        #a1 {
+            background-color: #f1962e;
+            grid-area: y;
+        }
+        #a2 {
+            background-color: #f1962e;
+            grid-area: z;
+        }
+        .i1 {
+            background-color: #2cd6c7;
+            grid-area: d;
+        }
+        .i2 {
+            background-color: #2cd6c7;
+            grid-area: e;
+        }
+        .i3 {
+            background-color: #2cd6c7;
+            grid-area: g;
+        }
+        .i4 {
+            background-color: #2cd6c7;
+            grid-area: i;
+        }
+        footer {
+            background-color: #00adb1;
+            grid-area: f;
+        }
+        
+        @media screen and (min-width: 550px) {
+            #wrapper {
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: 40px auto 50% 40px 100px;
+                grid-template-areas: 
+                    "h h h h h h h h h h h s"
+                    "d d d e e e g g g i i i"
+                    "a a a a a a a a y y y y"
+                    "a a a a a a a a z z z z"
+                    "f f f f f f f f f f f f"
+            }
+        }
+      
+    </style>
+</head>
+<body>
+<!--section#wrapper>header{Header}+nav{Menu}+article{Content}+footer{Footer}-->
+ <section id="wrapper">
+     <header>Header</header>
+     <div id="search">search</div>
+     <div class="i1">item 1</div>
+     <div class="i2">item 2</div>
+     <div class="i3">item 3</div>
+     <div class="i4">item 4</div>
+     <article>Article</article>
+     <aside id="a1">Aside 1</aside>
+     <aside id="a2">Aside 2</aside>
+     <footer>Footer</footer>
+ </section>
+</body>
+</html>
