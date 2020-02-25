@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>flexbox with support for older browsers</title>
+    
+    <style>
+        body {
+            font-family: sans-serif;
+            width: 80%;
+            margin: 0 auto;
+        }
+        section {
+            display: -ms-flexbox;
+            display: flex;
+        }
+        .col {
+            width: 20%;
+            padding: 20px;
+        }
+        .col1 {
+            background-color: #7cba3d;
+        }
+        .col2 {
+            background-color: #43a140
+        }
+        .col3 {
+            background-color: #008238;
+        }
+    </style>
+</head>
+<body>
+<!--   section>article.col.col$*3>p{This is column $}-->
+    <section>
+        <article class="col col1">
+            <p>This is column 1</p>
+        </article>
+        <article class="col col2">
+            <p>This is column 2</p>
+            <p>Here's another line.</p>
+        </article>
+        <article class="col col3">
+            <p>This is column 3</p>
+            <p>Here's another line.</p>
+            <p>Here's another line.</p>
+        </article>
+    </section>
+</body>
+</html>

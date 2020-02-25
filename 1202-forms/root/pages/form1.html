@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form example 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700|Solway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/form1.css">
+</head>
+<body>
+<!--header>h1{Contact Us}+p>lorem^^section#contactInfo^footer{&copy;2019}-->
+    <header>
+        <h1>Contact Us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ea assumenda sequi obcaecati aut. Corrupti eaque, quia atque maiores eveniet. Nemo, et temporibus laudantium, quaerat error doloremque rem praesentium. Ipsum?</p>
+    </header>
+    <main>
+    <section id="companyInfo">
+        <h2>Company Information</h2>
+        <ul>
+            <li>Phone: 1-858-388-1800</li>
+            <li>Email: <a href="mailto:learn@sdccd.edu">learn@sdccd.edu</a></li>
+            <li>Address: 8355 Aero Drive, SD, CA 92123</li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.382284895135!2d-117.14889232149733!3d32.80863448977518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbffdc4c211c7f%3A0x13aed8e9e22d0b3b!2s8355%20Aero%20Dr%2C%20San%20Diego%2C%20CA%2092123!5e0!3m2!1sen!2sus!4v1575303966830!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        
+    </section>
+    <section id="contactInfo">
+       <h2>Get in touch with us</h2>
+        <form action="mailto:ekay@sdccd.edu" method="post">
+             <div>
+                 <label for="uName">Please enter your Name:</label>
+                 <input type="text" name="uName" id="uName">
+             </div>
+             
+             
+             <div>
+                 <label for="email">Email:</label>
+                 <input type="email" name="email" id="email">
+             </div>
+             
+             <div>
+                 <label for="phone">Phone: <span>111-111-1111</span></label>
+                 <input type="tel" id="phone" name="phone">
+             </div>
+             
+             <div>
+                 <label for="msg">Your message:</label>
+                 <textarea name="message" id="msg"></textarea>
+            </div>
+            
+            <div>
+<!--<input type="submit" value="Send it!">-->
+                <button type="submit">Send your message</button>
+                
+            </div>
+        </form>
+    </section>
+    </main>
+    <footer>&copy;2019</footer>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexbox - creating rows</title>
+    <style>
+        .wrapper {
+            font-family: sans-serif;
+            max-width: 1200px;
+            margin: 40px auto 0;
+            border: solid 1px #666;
+            display: flex;
+            justify-content:space-around;
+            flex-wrap: wrap;
+        }
+        h3{
+            margin: 0;
+            font-size: 60px;
+            text-align: center;
+            line-height: 1.25;
+        }
+        .col {
+            width: 150px;
+            height: 100px;
+            background-color: #069;
+            color: #fff;
+            border: solid 1px orange;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<!--   section.wrapper>article.col*6>h3{$}-->
+    <section class="wrapper">
+        <article class="col">
+            <h3>1</h3>
+        </article>
+        <article class="col">
+            <h3>2</h3>
+        </article>
+        <article class="col">
+            <h3>3</h3>
+        </article>
+        <article class="col">
+            <h3>4</h3>
+        </article>
+        <article class="col">
+            <h3>5</h3>
+        </article>
+        <article class="col">
+            <h3>6</h3>
+        </article>
+    </section>
+</body>
+</html>

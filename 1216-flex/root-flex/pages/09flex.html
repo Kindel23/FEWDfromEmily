@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flex align items</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            color: #fff;
+        }
+        .wrapper {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            border: solid 1px #666;
+            height: 10em;
+        }
+        .ex1 {
+            align-items: flex-start;
+        }
+        .ex2 {
+            align-items: flex-end;
+        }
+        .ex3 {
+            align-items: center;
+        }
+        .ex4 {
+            align-items: baseline;
+        }
+        .ex5 {
+            align-items: stretch;
+        }
+        .wrapper li {
+            width: 40px;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .ex1 li {
+            background-color: #7cba3d;
+        }
+        .ex2 li {
+            background-color: #43a140
+        }
+        .ex3 li {
+            background-color: #008238;
+        }
+        .ex4 li {
+            background-color: #006699;
+        }
+        .ex5 li {
+            background-color: #339966;
+        }
+        .ex6 li {
+            background-color: #999933;
+        }
+
+    </style>
+</head>
+<body>
+<!--ul.wrapper.ex$*5>li{$}*6 -->
+<ul class="wrapper ex1">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+<ul class="wrapper ex2">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+<ul class="wrapper ex3">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+<ul class="wrapper ex4">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+<ul class="wrapper ex5">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>    
+</body>
+</html>

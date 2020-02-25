@@ -1,0 +1,187 @@
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Slabo 27px', serif;
+*/
+header, main, nav, article, section, aside, figure, footer, video, audio {
+  display: block;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+body {
+   font-family: 'Slabo 27px', serif;
+}   
+p {
+    font-size: 1.5em;
+    line-height: 1.7;
+    margin-bottom: .75em;
+}
+header {
+    text-align: center;
+    background-color: #069;
+}
+header h1 a {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 7px 7px 0;
+    font: 900 2.8em 'Roboto', sans-serif;
+    text-decoration: none;
+    display: block;
+}
+header h2 {
+    color: #dedede;
+    padding: 0 7px 7px;
+    font: 300 1.6em 'Roboto', sans-serif;
+}
+nav {
+    background-color: #006;
+}
+nav li {
+    list-style-type: none;
+    border-bottom: solid 1px #fff;
+}
+nav li a {
+    color: #fff;
+    display: block;
+    font: 900 1.5em/1.75 'Roboto', sans-serif;
+    text-decoration: none;
+}
+nav li a:hover {
+    background-color: #9eb117;
+}
+article {
+    text-align: center;
+}
+article h2 {
+    font-size: 2em;
+    color: #069;
+    margin: 1em 0;
+}
+.jumpMenu li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px 10px 0;
+    border: solid 1px #333;
+    min-width: 150px;
+    min-height: 150px;
+    display: inline-block;
+    background: url(../images/imageSprite8.png) no-repeat;
+    position: relative;
+}
+#shark {
+    background-position: -150px 0;
+}
+#shark:hover {
+    background-position: 0 0;
+}
+#octo {
+    background-position: -150px -166px;
+}
+#octo:hover {
+    background-position: 0 -166px;
+}
+#whale {
+    background-position: -150px -300px;
+}
+#whale:hover {
+    background-position: 0 -300px;
+}
+#crab {
+    background-position: -150px -450px;
+}
+#crab:hover {
+    background-position: 0 -450px;
+}
+#turtle {
+    background-position: -150px -600px;
+}
+#turtle:hover {
+    background-position: 0 -600px;
+}
+#fish {
+    background-position: -150px -750px;
+}
+#fish:hover {
+    background-position: 0 -750px;
+}
+#shark2 {
+    background: url(../images/shark.gif) no-repeat;
+}
+#shark2:hover {
+    background-position: -136px 0;
+}
+.jumpMenu a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+}
+.jumpMenu p {
+    background-color: #006;
+    margin-top: 125px;
+}
+footer {
+    font-style: italic;
+    color: #ccc;
+    background-color: #006;
+    margin-top: 30px;
+    text-align: center;
+}
+footer p {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+@media screen and (min-width: 400px) {
+    nav li {
+        width: 50%;
+        float: left;
+    } 
+    nav ul:after {
+        display: block;
+        content: " ";
+        clear: both;
+    }
+    nav li:nth-child(odd){
+        border-right: solid 1px #fff;
+    }
+} /* end 400px media query*/
+
+@media screen and (min-width: 700px) {
+    nav li {
+        width: 25%;
+    }
+    nav li {
+        border-right: solid 1px #fff;
+    }
+    nav li:last-child {
+        border-right: none;
+    }
+}
+@media screen and (min-width: 685px) and (max-width: 1030px){
+    .jumpMenu {
+        width: 685px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+    nav ul, .jumpMenu {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    nav li {
+        border-bottom: none;
+    }
+    nav li:first-child {
+        border-left: solid 1px #fff;
+    }
+    nav li:last-child {
+        border-right: solid 1px #fff;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flex grow and shrink</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            color: #fff;
+        }
+        .wrapper {
+            background-color: palegoldenrod;
+            padding: .5em;
+            display: flex;
+        }
+        h1 {
+            font-size: 6em;
+            line-height: 1;
+            margin: 0;
+        }
+        .col {
+            box-sizing: border-box;
+            padding: .75em;
+        }
+        .col1 {
+            background-color: #7cba3d;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 15em;
+        }
+        .col2 {
+            background-color: #43a140;
+            flex-grow: 2;
+            flex-shrink: 2;
+            flex-basis: 15em;
+        }
+
+    </style>
+</head>
+<body>
+<!--   section.wrapper>article.col.col$*3>h1{$}-->
+    <section class="wrapper">
+        <article class="col col1">
+            <h1>1</h1>
+        </article>
+        <article class="col col2">
+            <h1>2</h1>
+        </article>
+    </section>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/*
+font-family: 'Solway', serif;
+font-family: 'Roboto', sans-serif;
+*/
+header, nav, footer, section, article, aside, audio, video, main, figure {
+    display: block;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    color: #fff;
+    background-color: #65450a;
+    text-align: center;
+    padding: .2em .2em .6em;
+}
+h1 {
+    font-size: 4em;
+}
+h2 {
+    font-size: 3em;
+    color: #075147;
+}
+#companyInfo ul {
+    list-style-type: none;
+}
+p, li, a, label {
+    font-size: 1.5rem;
+}
+section {
+    margin: .5em 2%;
+}
+li {
+    line-height: 1.5;
+}
+a {
+    color: #4b8178;
+}
+footer {
+    padding: .75em;
+    background-color: #124d56;
+    color: #fff;
+    text-align: center;
+    margin-top: 1.5em;
+}
+iframe {
+    max-width: 100%;
+    height: auto;
+    margin-top: .75em;
+}
+#contactInfo div {
+    margin: 1.2em 0;
+}
+input, textarea {
+    font-family: 'Solway', serif;
+    font-size: 1.5em;
+    color: #2f4858;
+    padding: .6em;
+    width: 90%;
+    max-width: 350px;
+}
+label {
+    display: block;
+}
+textarea {
+    min-height: 100px;
+}
+#phone {
+    max-width: 120px;
+}
+label span {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #666;
+}
+button {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: .6em;
+    color: #fff;
+    background-color: #124d56;
+    background: linear-gradient(180deg, #124d56 0%, #4b8178 100%);
+/*    background: radial-gradient(circle, #124d56 0%, #4b8178 100%);*/
+    border: none;
+    border-radius: 0 .6em .6em .6em;
+}
+button:hover {
+     background: linear-gradient(180deg, #4b8178 0%, #124d56 100%);
+}
+@media screen and (min-width: 625px) {
+    header p {
+        max-width: 550px; 
+        margin: auto;
+    }
+    section {
+        width: 46%;
+        float: left;
+        margin-top: 2em;
+    }
+    main {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    footer {
+        clear: both;
+    }
+}
+
+

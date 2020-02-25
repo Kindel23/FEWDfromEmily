@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexbox, 3 column</title>
+    
+    <style>
+        .wrapper {
+            font-family: sans-serif;
+            line-height: 1.5;
+            width: 80%;
+            margin: 40px auto 0;
+            max-width: 1200px;
+            border: solid 1px #666;
+/*            display: flex;*/
+        }
+        .col {
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        .mainCol {
+            background-color: #7cba3d;
+        }
+        .sideBar1 {
+            background-color: #43a140;
+        }
+        .sideBar2 {
+            background-color: #008238;
+        }
+        @media screen and (min-width: 700px) {
+            .wrapper {
+                display: flex; 
+                justify-content: space-between;
+            }
+            .col {
+               flex-basis: 30%;
+/*               margin-right: 10px;*/
+            }
+        }
+    </style>
+</head>
+<body>
+<!--   section.wrapper>article.mainCol>h2{Main Column}+p*3>lorem^^aside.sideBar$*2>h3{Sidebar $}+p>lorem-->
+    <section class="wrapper">
+        <article class="mainCol col">
+            <h2>Main Column</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur in, molestias iste minus ipsam ad, ratione corporis, omnis vero culpa dolore inventore possimus adipisci ipsum ab. Soluta quae voluptatibus expedita!</p>
+            <p>Expedita maxime iusto porro pariatur labore, nulla delectus tempore inventore aperiam officiis reprehenderit nemo culpa illo, tempora animi esse natus ratione recusandae officia, suscipit, modi facilis assumenda! Sequi, perferendis natus!</p>
+            <p>Itaque nulla natus provident distinctio voluptates, commodi error saepe modi ex pariatur magni earum aliquam officia nisi quibusdam, numquam sed. Dolor delectus laborum nihil aliquid non voluptas, ut labore culpa?</p>
+        </article>
+        <aside class="sideBar1 col">
+            <h3>Sidebar 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit dolorum tenetur, rerum atque ratione sint et iusto sit aliquid officia molestiae corporis nam, placeat amet? Incidunt sapiente architecto, ut cupiditate.</p>
+        </aside>
+        <aside class="sideBar2 col">
+            <h3>Sidebar 2</h3>
+            <p>Officia sunt ab sit temporibus obcaecati, corporis expedita. Saepe voluptate quod sequi, necessitatibus explicabo consequatur, voluptas dolorum eligendi qui ipsam earum delectus omnis error in accusantium magni aliquid illum maxime?</p>
+        </aside>
+    </section>
+</body>
+</html>
