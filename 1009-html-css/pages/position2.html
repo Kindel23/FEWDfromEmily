@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>positioning</title>
+    <style type="text/css">
+        .container {
+            border: solid 1px #555;
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+        }
+        .b1 {
+            background-color: greenyellow;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .b2 {
+            background-color: deepskyblue;
+            position: relative;
+        }
+        .b3 {
+            background-color: darkorange;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .b4 {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+<!--   div.container>h1{Main headline}+div.box{box $}*4-->
+    <div class="container">
+        <h1>Main headline</h1>
+        <div class="box b1">box 1</div>
+        <div class="box b2">box 2</div>
+        <div class="box b3">box 3</div>
+        <div class="box b4">box 4</div>
+    </div>
+</body>
+</html>

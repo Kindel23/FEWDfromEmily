@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Floats and Position</title>
+    <style type="text/css">
+        .container {
+            width: 80%;
+            border: dashed 1px #666;
+            padding: 5px;
+            margin: 20px auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .outline {
+            padding: 1%;
+            margin: 1%;
+            outline: solid 1px orange;
+            float: left;
+        }
+        .ex1 {
+            width: 46%;
+        }
+        .footer {
+            background-color: #555;
+            color: white;
+            text-align: center;
+            clear: both;
+        }
+        .onLeft {
+            float: left;
+            padding-right: 5px;
+        }
+        .onRt {
+            float: right;
+            padding: 0 0 5px 5px;
+            width: 25%;
+            clear: right;
+        }
+        .smSize {
+            width: 25%;
+        }
+        .third img {
+            width: 32%;
+            float: left;
+            padding: 0 5px 5px 0;
+        }
+        .stuff {
+            width: 46%;
+            margin-bottom: 20px;
+        }
+        .fourth {
+            overflow: auto;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+       <h1>Big 'ole headline</h1>
+        <div class="outline ex1">
+            <p><img src="images/turtle1.jpg" alt="sea turtle" width="50%" class="onLeft" />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ea magni modi harum illo corporis voluptatem dolorum ipsa sequi velit quasi a id esse earum porro, accusantium fugit odit aperiam?</p>
+        </div><!-- end outline div -->
+        <div class="outline ex1">
+            <p>Repellendus quibusdam non, officia inventore libero architecto, atque quis veniam assumenda quod provident mollitia sit veritatis unde qui explicabo quam illo, quasi, accusamus commodi ipsum ab! Vel doloribus a debitis!</p>
+        </div><!-- end outline div -->
+        <div class="footer">copyright 2019</div>
+    </div><!-- end container div -->
+    
+    <!--container 2 -->
+    <div class="container">
+        <h1>2nd container</h1>
+<!--div.outline.ex2*2>p>lorem-->
+        <div class="outline ex2">
+            <p><img src="images/turtle1.jpg" alt="sea turtle" class="onRt"><img src="images/turtle2.jpg" alt="sea turtle" class="onRt"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum illum autem cumque. Pariatur tempore soluta dolores quos culpa illum similique, accusantium! Ullam quis possimus ex, eveniet quisquam fugit provident tempora? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum illum autem cumque. Pariatur tempore soluta dolores quos culpa illum similique, accusantium! Ullam quis possimus ex, eveniet quisquam fugit provident tempora?</p>
+        </div><!-- end outline div -->
+        <div class="outline ex2">
+           <img src="images/turtle1.jpg" alt="sea turtle" class="onLeft smSize"><img src="images/turtle2.jpg" alt="sea turtle" class="onLeft smSize">
+            <p>Voluptates eum ut autem quis, officiis deserunt porro cupiditate, commodi tenetur eaque consequuntur explicabo natus voluptas velit debitis, ullam aliquid aliquam! Accusamus veritatis fugiat alias mollitia, sit perspiciatis eum laboriosam.</p>
+        </div><!-- end outline div -->
+        <div class="footer">copyright 2019</div>
+    </div><!-- end container div -->
+    
+<!--    div.container>h1{3d container}+div.outline>(img[src=images/turtle$.jpg alt='sea turtle']*3)*2^div.footer{copyright 2019}-->
+    <div class="container third">
+        <h1>3d container</h1>
+        <div class="outline">
+            <img src="images/turtle1.jpg" alt="sea turtle">
+            <img src="images/turtle2.jpg" alt="sea turtle">
+            <img src="images/turtle3.jpg" alt="sea turtle">
+            <img src="images/turtle1.jpg" alt="sea turtle">
+            <img src="images/turtle2.jpg" alt="sea turtle">
+            <img src="images/turtle3.jpg" alt="sea turtle">
+        </div>
+        <div class="footer">copyright 2019</div>
+    </div><!-- end 3d container -->
+    
+<!--     div.container>h1{4th container}+div.outline.stuff*2>p*2>lorem-->
+    <div class="container fourth">
+       <h1>4th container</h1>
+        <div class="outline stuff">
+            <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam explicabo cumque, eius maxime, recusandae quod praesentium fugiat animi quasi, ducimus ipsam alias vel, consequatur ad. Iure consectetur ex iusto, quia! Temporibus nobis, similique nesciunt culpa nisi, laudantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est animi ipsam consectetur, dolore temporibus, beatae deserunt quo porro aliquam minus in consequatur ea! Tempora expedita, sint odit nemo, nihil et!</p>
+            <p>Autem quis officia ducimus suscipit tempore nisi, veritatis, nulla saepe, aut sint cum fugit quas voluptatibus iste iure enim sit non labore eos ipsa illo, nostrum. Nam ut recusandae debitis.</p>
+        </div>
+        <div class="outline stuff">
+           <p>2 Delectus provident eligendi veritatis doloribus nemo recusandae architecto repellat ab, repudiandae aperiam, eveniet optio est laborum odit ad perferendis, voluptas a, consequatur qui. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt sed laudantium nostrum maxime ipsum sint magni dolore suscipit voluptate impedit blanditiis illum dolorum voluptatibus officiis praesentium, saepe provident eius necessitatibus.</p>
+        </div>
+    </div>
+
+
+</body>
+</html>

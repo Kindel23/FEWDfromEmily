@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Position</title>
+    <style type="text/css">
+        .container {
+            border: solid 1px #555;
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
+            position: relative;
+        }
+        .box {
+            background-color: yellowgreen;
+            margin: 0px;
+            padding: 5px;
+            width: 100px;
+            height: 100px;
+        }
+        .one {
+            position: absolute;
+            top: 0px;
+            left: 0;
+        }
+        .two {
+            background-color: darkorange;
+            position: relative;
+        }
+        .three {
+            background-color: deepskyblue;
+            position: absolute;
+            bottom: -65px;
+            right: -65px;
+            z-index: 5;
+        }
+        .four {
+            background-color: lightcoral;
+            position: absolute;
+            bottom: -55px;
+            right: -55px;
+            z-index: 1;
+        }
+        
+    </style>
+</head>
+<body>
+<!--   div.container>div.box{box $}*4-->
+    <div class="container">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam maiores, quo! Culpa placeat, voluptas accusantium illum, aliquid fuga adipisci repellat temporibus cum error ipsa sed pariatur, in harum libero impedit?</p>
+        <div class="box one">box 1</div>
+        <div class="box two">box 2</div>
+        <div class="box three">box 3</div>
+        <div class="box four">box 4</div>
+        
+    </div>
+</body>
+</html>

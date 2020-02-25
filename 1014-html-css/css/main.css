@@ -1,0 +1,143 @@
+/*
+    COLORS
+    dark blue: #0077a3
+    light blue: #a3ddf2
+    orange: #f1830d
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(../images/gradientHeader.jpg);
+    background-repeat: repeat-x;
+    font-family: "Myriad Pro Regular", Helvetica, sans-serif;
+}
+#container {
+    width: 960px;
+    margin: 0 auto;
+}
+#header {
+    height: 146px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+#header h1 {
+    color: #0077a3;
+    font-size: 3em;
+    font-weight: normal;
+    display: inline-block;
+    padding: 45px 0 0 15px;
+}
+#header img {
+    float: left;
+}
+#navigation {
+    background-color: #0077a3;
+    border-bottom: solid 4px #f1830d;
+    font-size: 1.125em;
+    text-align: center;
+    height: 30px;
+}
+#navigation li {
+    display: inline-block;
+    width: 150px;
+}
+#navigation a {
+    color: #fff;
+    padding: 9px 30px;
+    text-decoration: none;
+    display: inline-block;
+}
+#navigation a:visited {
+    color: #a3ddf2;
+}
+#navigation a:hover {
+    color: #f1830d;
+    background-image: url(../images/triangle.gif);
+    background-repeat: no-repeat;
+    background-position: 10px 45%;
+}
+#navigation a:active {
+    color: #a3ddf2;
+}
+#mainContent {
+    padding: 40px 0;
+    margin: 0 10px;
+    position: relative;
+}
+h2 {
+    font-size: 2.25em;
+    font-weight: normal;
+}
+h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #f1830d;
+    text-transform: uppercase;
+}
+p {
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.col2A {
+    width: 542px;
+    padding: 0 16px 0 0;
+    float: left;
+}
+.col2B {
+    width: 382px;
+    float: right;
+}
+.banner {
+    clear: both;
+    padding: 30px 0;
+}
+.banner h1 {
+    font-size: 3em;
+    font-weight: normal;
+    text-align: center;
+    background-color: #f1830d;
+    width: 960px;
+}
+.banner a {
+    color: #333;
+    display: inline-block;
+    text-decoration: none;
+    width: 960px;
+    padding-top: 4px;
+}
+.banner a:hover {
+   background-color: #0077a3;
+    color: #fff;
+}
+.col3 {
+    width: 303px;
+    float: left;
+}
+.col3.middle {
+    padding: 0 15px;
+}
+#footer {
+    clear: both;
+    text-align: center;
+    background: url(../images/gradientFooter.jpg) repeat-x;
+    height: 50px;
+    padding-top: 50px;
+}
+#footer p {
+    position: relative;
+    width: 960px;
+    margin:0 auto;
+}
+#footer img {
+    position: absolute;
+    top: -30px;
+    left: 170px;
+}
+#swimTurtle {
+    position: absolute;
+    width: 200px;
+    top: -110px;
+    right: -80px;
+}
