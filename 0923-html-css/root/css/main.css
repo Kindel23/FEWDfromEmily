@@ -1,0 +1,35 @@
+body {
+    font-family: Verdana, sans-serif;
+    color: #333;
+    margin: 20px auto;
+    width: 600px;
+}
+h1 {
+    background-color: #2578cb;
+    color: white;
+    text-align: center;
+}
+h2 {
+    color: #2578cb;
+    font-style: italic;
+    text-align: center;
+}
+a {
+    color: #2578cb;
+}
+img {
+    border: solid 2px #2578cb;
+    padding: 5px;
+    margin-left: 43px; 
+}
+div {
+    background-color: #b0d8f4;
+    text-align: center;
+    padding: 5px;
+}
+.copy {
+    font-size: 10px;
+}
+
+
+

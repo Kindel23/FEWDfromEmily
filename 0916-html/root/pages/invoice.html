@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   
+  <html xmlns="http://www.w3.org/1999/xhtml">
+      <head>
+          <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+          <title>Invoice</title>
+      </head>
+      <body>
+          <h1>A complex table that displays an invoice</h1>
+          
+          <table border="1" cellpadding="4" cellspacing="0" width="500">
+              <caption>
+                  <em>An invoice table</em>
+              </caption>
+              <thead>
+                  <tr bgcolor="#cccccc">
+                      <th colspan="3" align="left">Invoice: 1234546</th>
+                      <th>September 16, 2019</th>
+                  </tr>
+                  <tr>
+                      <td colspan="2">
+                          <p><strong>Pay to:</strong><br />
+                          XYZ Co.<br />
+                          1234 Elm Street<br />
+                          San Diego, CA 92111
+                          </p>
+                      </td>
+                      
+                      <td colspan="2">
+                          <p><strong>Customer:</strong><br />
+                          John Doe<br />
+                          123 Palm Drive<br />
+                          San Diego, CA 92412</p>
+                      </td>
+                  </tr>   
+              </thead>
+              
+              <!-- <tfoot> tag is weird, it has to come before the <tbody> tag in order to be valid. Note that it will still display at the bottom of the table -->
+              <tfoot>
+                  <tr>
+                      <td colspan="3" bgcolor="#cccccc"><strong>Subtotal</strong></td>
+                      <td align="right">$200.00</td>     
+                  </tr>
+                  
+                  <tr>
+                      <td bgcolor="#cccccc"><strong>Tax</strong></td>
+                      <td colspan="2">8%</td>
+                      <td align="right">$16.00</td>
+                  </tr>
+                  
+                  <tr>
+                      <td colspan="3" bgcolor="#cccccc"><strong>Grand Total</strong></td>
+                      <td align="right">$216.00</td>
+                  </tr>
+              </tfoot>
+              
+              <tbody>
+                  <tr bgcolor="#cccccc">
+                      <th align="left" width="300">Name / Description</th>
+                      <th>Qty.</th>
+                      <th>@</th>
+                      <th align="right">Cost</th>
+                  </tr>
+                  
+                  <tr>
+                      <td>Widget 1</td>
+                      <td>1000</td>
+                      <td>$.10</td>
+                      <td align="right">$100.00</td>
+                  </tr>
+                  
+                  <tr><!-- tr starts table row -->
+                      <td>Widget 2</td>
+                      <td>10</td>
+                      <td>$10.00</td>
+                      <td align="right">$100.00</td>
+                  </tr>
+                </tbody>
+                
+          </table>
+      </body>
+      
+      
+  </html>
+  
+ 
+
+
+
+

@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: #008ab1;
+}
+body {
+    background-color: white;
+    font-family: Georgia, serif;
+    margin: 0 auto; /* margin auto on right and left centers that element*/
+    width: 720px;
+}
+#mainContent h2 {
+    color: #00adb1;
+    text-align: center;
+    padding: .75em;
+}
+p {
+    margin-bottom: .5em;
+}
+ul {
+    padding: 0 4em;
+    margin-bottom: .5em;
+}
+a {
+   color: #006699; 
+}
+a:hover {
+    color: #00adb1;
+}
+img {
+    border: solid 2px #006699;
+}
+#header {
+    background-image: url("../images/ws-bg.jpg");
+    background-position: right;
+    color: white;
+    font-family: Verdana, sans-serif;
+    height: 137px;
+    text-align: center;
+    padding-top: 73px;
+}
+#nav {
+    background-color: #00adb1;
+    text-align: center;
+}
+#nav li {
+    background-color: #006699;
+    display: inline-block;
+    border: solid 1px white;
+    margin: 5px 10px;
+}
+#nav a {
+    color: #f9f871;
+    display: block;
+    text-decoration: none; 
+    padding: 4px 6px;
+}
+#nav a:hover {
+   color: #006699;
+    background-color: #f9f871;
+}
+#mainContent {
+  margin: 0 1.5em .75em; 
+}
+#copy {
+    background-color: #00adb1;
+    color: #fff;
+    font-size: .75em;
+    padding: .375em; /* 6/16=6px */
+    text-align: center;  
+}
+.onRight {
+    float: right;
+    margin-left: 1em;
+}
+.onLeft {
+    float: left;
+    margin-right: 1em;
+}
+.clearIt {
+    clear: both;
+    padding: .5em 0;
+}
+
+
+
